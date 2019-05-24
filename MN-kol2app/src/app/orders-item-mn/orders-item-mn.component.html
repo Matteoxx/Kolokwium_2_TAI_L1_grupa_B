@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" [src]="orderItem.image" alt="" />
+  <div class="card-body">
+    <h3>Id: {{ orderItem.id }}</h3>
+    <h4 class="card-title">Tytuł zamówienia: {{ orderItem.title }}</h4>
+    <h4>Cena: {{ orderItem.price }}</h4>
+    <p class="card-text">Opis zamówienia: {{ orderItem.text }}</p>
+    <a [routerLink]="['/orders', orderItem.id]" class="btn btn-primary"
+      >Szczegoly zamowienia</a
+    >
+  </div>
+</div>
